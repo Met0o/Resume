@@ -41,7 +41,6 @@ if(params$pdf_mode) {
 }
 ```
 
-
 Aside
 ================================================================================
 
@@ -53,9 +52,9 @@ datadrivencv::build_network_logo(CV$entries_data)
 
 ```{r}
 if(params$pdf_mode){
-  cat("View this Resume online at https://rpubs.com/MetodiSimeonov/Resume")
+  cat("View this CV online at https://rpubs.com/MetodiSimeonov/CV")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF](https://github.com/Met0o/Resume/Simeonov.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF](https://github.com/Met0o/Resume/SimeonovCV.pdf)")
 }
 ```
 
@@ -67,14 +66,12 @@ CV %>% print_contact_info()
 ```
 
 
-
 Language Skills {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %>% print_skill_bars()
 ```
-
 
 
 Disclaimer {#disclaimer}
@@ -85,8 +82,6 @@ Made with the R package [**pagedown**](https://github.com/rstudio/pagedown)
 The source code is available on [github.com/Met0o/Resume](https://github.com/Met0o/Resume)
 
 Last updated on `r Sys.Date()`
-
-
 
 Main
 ================================================================================
@@ -99,8 +94,6 @@ Metodi Simeonov {#title}
 CV %<>% print_text_block("intro") 
 ```
 
-
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -108,11 +101,8 @@ Education {data-icon=graduation-cap data-concise=true}
 CV %<>% print_section('education')
 ```
 
-
-
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
-:::
 
 ```{r}
 CV %<>% print_section('industry_positions')
@@ -120,12 +110,40 @@ CV %<>% print_section('industry_positions')
 
 <!-- These breaks just force a new page so section doesn't get cut off -->
 <br>
-<br>
-<br>
 
 Certificates {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('certificates')
+```
+
+<br>
+
+Tools and Technologies {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('hard_skills')
+```
+
+Competencies {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('soft_skills')
+```
+
+Work Rewards / Recognitions {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('recognitions')
+```
+
+Projects outside of work {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('by_me_press')
 ```
