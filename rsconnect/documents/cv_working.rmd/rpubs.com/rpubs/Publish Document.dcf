@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/809630/ea3580b136b740e0ad78e05aa66564d1
+bundleId: https://api.rpubs.com/api/v1/document/809630/ea3580b136b740e0ad78e05aa66564d1
+url: http://rpubs.com/MetodiSimeonov/809630
+when: 1637826048.11942
+lastSyncTime: 1637826048.11942
