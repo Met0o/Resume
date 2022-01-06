@@ -8,7 +8,7 @@
 # Knit the HTML version
 rmarkdown::render("cv_working.rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "cv.html")
+                  output_file = "Metodi Simeonov.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
